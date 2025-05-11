@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+.Logo{
+    background-color: rgb(75, 75, 206);
+    color:#fff;
+    display:flex;
+    width:20%;
+}
+
+.Logo {
+    img{
+    width:40px;
+}
+}
+.Logo h2{
+    padding:10px;
+    margin:0;   
+}
+*,body{
+    padding:0;
+    margin:0;
+}
+.Header{
+     background-color: coral;
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    align-items:center;
+}
+ 
+.Nav_Lists{
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    gap:0px;
+    width:100%;
+}
+.Nav_Lists button{
+    padding:1px 10px;
+    cursor: pointer;   
+    height:42px;
+    margin:0;
+}
+.Nav_Lists ul{
+    display:flex;
+    background-color: coral;
+    padding:18px 0;
+    column-gap: 0px;
+    list-style-type: none;
+}
+.Nav_Lists ul a{
+      border-right: 2px solid #e3e1e1;
+}
+.FoodMenu{
+    display:flex;
+    margin:25px;
+    gap:25px;
+    flex-wrap:wrap;
+}
+.FoodMenu .FoodCard{
+    border:1px solid black;
+    padding:10px;
+    width:170px;
+    display:flex;
+    flex-direction: column;
+    row-gap:7px;
+    align-items: center;
+    background-color: cornsilk;
+}
+.FoodCard img{
+    width: 100%;
+    height:140px;
+}
+.FoodCard h3,h4,h5{
+    color:blue;
+}
+.Search{
+    padding:15px;
+}
+.Search input{
+    padding:10px;
+    margin:5px;
+    border:1px solid black;
+    outline:none;
+}
+.Search button{
+    padding:10px;
+   background-color:cornsilk;
+    cursor:pointer;
+}
+
+.ShimmerDiv{
+  display: flex;
+  flex-wrap: wrap;
+  gap:25px;
+  margin:25px;
+  margin-top:105px;
+}
+.ShimmerDiv .ShimmerCard{
+    padding:10px;
+    width:170px;
+    height:250px;
+    display:flex;
+    flex-direction: column;
+    row-gap:7px;
+    align-items: center;
+    animation: Shimmer 1.6s infinite;
+    background: linear-gradient(
+    to right,
+    #c4bfbf 0% ,#e3e1e1 20%,#c4bfbf 100%
+  );
+}
+@keyframes Shimmer{
+    0%{
+        background-position:-170px;
+    }
+    100%{
+        background-position:170px;
+    }
+}
+a{
+    text-decoration: none;
+}
+ul a li{
+     text-decoration:none;
+    color: #f2eff2;
+    background-color: rgb(82, 134, 136);
+    padding:11px 10px;
+    margin:0;
+}
+ul a li:hover{
+    background-color: slateblue;
+}
+.ErrorDiv{
+    padding:30px;
+    text-align:center;
+    font-size: 2rem;
+    color:darkblue;
+    background-color: blanchedalmond;
+    border:1px solid gray;
+    margin:100px 0;
+    max-width:100%;
+}
+.ErrorDiv h3{
+    color:darkgreen;
+    margin:20px 0;
+}
+.HotelDiv .FoodItems{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    border:2px solid brown;
+    margin:10px 0;
+    font-size:1.2rem;
+    color:#fff;
+    font-weight: 800;
+    background-color: rgb(2, 159, 161);
+}
+.HotelDiv h2{
+    text-align: center;
+    padding:20px;
+    color:darkviolet
+}
+.HotelDiv span{
+    font-size:0.9rem;
+    color:floralwhite;
+} */
