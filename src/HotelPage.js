@@ -17,7 +17,7 @@ const HotelPage = () => {
     );
   });
     
-    if (!HotelDetail) return <h1>Json Data Format Problem</h1>; //Problem with the API JSON Data....
+    if (!HotelDetail) return <h1>Swiggy has Different Json Data Format!!</h1>; //Problem with the API JSON Data....
 
   return Categories.length === 0 ? (
     <Shimmer />
