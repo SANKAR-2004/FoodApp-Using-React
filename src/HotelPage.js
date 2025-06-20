@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Shimmer from "./Shimmer.js";
 import useRestaurant from "../utils/useRestaurant.js";
-import ItemList from "./ItemList.js";
 import HotelCategory from "./HotelCategory.js";
  
 

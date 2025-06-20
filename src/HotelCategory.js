@@ -25,6 +25,7 @@ const HotelCategory = ({ card,onShow,isActive }) => {
               <ItemList
                 {...listitem?.card?.info}
                 key={listitem?.card?.info?.id}
+                mode="add"
               />
             )
           );

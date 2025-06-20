@@ -21,14 +21,21 @@ import Shimmer from "./Shimmer.js";
 import useOnline from "../utils/useOnline.js";
 import './index.css';
 import UserContext from "../utils/UserContext.js";
+import Cart from "./Cart.js";
+import { Provider } from "react-redux";
+import AppStore from "../ReduxStore/AppStore.js";
 
 const Body = () => {
   if (!useOnline()) return <h2 className="text-2xl">No Internet Connection !! 🚨🚨 Let me build a game here...</h2>;
   return (
     <>
       <UserContext.Provider value={{ userName: "Rajesh" }}>
-        <Header />
+
+        <Provider store={AppStore}>
+          <Header />
           <Outlet />
+        </Provider>
+        
       </UserContext.Provider>
 
       <Footer />
@@ -68,10 +75,16 @@ const appRouter = createBrowserRouter(
           element: <ContactClass />,
         },
         {
+          path: "/cart",
+          element: <Cart />,
+        },
+        {
           path: "/instamart",
-          element: <React.Suspense fallback={ <Shimmer/> }>
-                   <Instamart />
-                   </React.Suspense>,
+          element: (
+            <React.Suspense fallback={<Shimmer />}>
+              <Instamart />
+            </React.Suspense>
+          ),
         },
         {
           path: "/",
