@@ -18,7 +18,7 @@ const FoodCard = ({
   const { userName, gender } = useContext(UserContext);
 
   return (
-    <div className="hover:bg-yellow-100 text-sm/5 bg-red-100 flex flex-col justify-center gap-y-1 p-3 border-1 w-60 h-64  overflow-hidden">
+    <div data-testid="resCard" className="hover:bg-yellow-100 text-sm/5 bg-red-100 flex flex-col justify-center gap-y-1 p-3 border-1 w-60 h-64  overflow-hidden">
       <img
         className="w-full h-40 mb-2 "
         src={

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer.js";
 import useRestaurant from "../utils/useRestaurant.js";
 import HotelCategory from "./HotelCategory.js";

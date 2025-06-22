@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 //import { foodData } from "../constants.js";
 import Shimmer from "./Shimmer.js";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { FOOD_DATA_API } from "../constants.js";
 import useOnline from "../utils/useOnline.js";
 import uselocalStorage from "../utils/uselocalStorage";
@@ -10,7 +10,7 @@ import PromotedCard from "../utils/PromotedCard.js";
 
 //--------------------------FoodMenu
 
-const SearchBar = ({ TextValue, setTextValue, allData, setfilterData }) => {
+export const SearchBar = ({ TextValue, setTextValue, allData, setfilterData }) => {
   return (
     <div className="p-2.5 m-2">
       <input
@@ -22,6 +22,7 @@ const SearchBar = ({ TextValue, setTextValue, allData, setfilterData }) => {
           console.log(TextValue);
         }}
         placeholder="Enter Shop Name"
+        data-testid="TextBox"
       />
       <button
         className="hover:bg-blue-500 p-1.5 bg-violet-950 cursor-pointer text-white border-1"

@@ -1,8 +1,8 @@
 import { useState } from "react";
 //import {url} from "../constants.js";
 //import { Logo } from "../constants";
-import LogoURL from "../assets/LOGO.jpg";
-import { Link } from "react-router";
+//import LogoURL from "../assets/LOGO.jpg";
+import { Link } from "react-router-dom";
 import { IoMenuSharp } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { useContext } from "react";
@@ -13,7 +13,7 @@ import { FaCartShopping } from "react-icons/fa6";
 const LogoImg = () => (
  
   <div className="gap-x-2.5 p-2 flex items-center bg-amber-300">
-    <img src="../FOOD_VILLA.jpg" className="h-14" alt="Logo" />
+    <img className="h-14" alt="Logo" />
      
     <h2 className="text-3xl font-bold">EasyBuy</h2>
   </div>

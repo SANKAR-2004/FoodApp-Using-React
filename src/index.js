@@ -1,47 +1,27 @@
 import React from "react";//Make Sure to Give it inside the String cotation(" ")
 import ReactDOM from "react-dom/client";
-import Header from "./Header.js";
 import FoodMenu from "./FoodMenu.js";
-import Footer from "./Footer.js";
-// import { createBrowserRouter } from "react-router";
- //import { RouterProvider } from "react-router-dom";
+ import { createBrowserRouter } from "react-router";
+import { RouterProvider } from "react-router-dom";
  import Contact from "./Contact.js";
-// import { Link } from "react-router";
-import { createBrowserRouter, RouterProvider } from "react-router"; 
+ import { Link } from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router-dom"; 
 import AboutUs from "./AboutUs.js";
 import Orders from "./Orders.js";
 import Error from "./Error.js";
-import { Outlet } from "react-router";
+
 import HotelPage from "./HotelPage.js";
 import Login from "./Login.jsx";
 import ContactClass from "./ContactClass.js";
 //import Instamart from "./Instamart.js";
 const Instamart = React.lazy(() => import("./Instamart.js"));
 import Shimmer from "./Shimmer.js";
-import useOnline from "../utils/useOnline.js";
+
 import './index.css';
-import UserContext from "../utils/UserContext.js";
+
 import Cart from "./Cart.js";
-import { Provider } from "react-redux";
-import AppStore from "../ReduxStore/AppStore.js";
 
-const Body = () => {
-  if (!useOnline()) return <h2 className="text-2xl">No Internet Connection !! 🚨🚨 Let me build a game here...</h2>;
-  return (
-    <>
-      <UserContext.Provider value={{ userName: "Rajesh" }}>
-
-        <Provider store={AppStore}>
-          <Header />
-          <Outlet />
-        </Provider>
-        
-      </UserContext.Provider>
-
-      <Footer />
-    </>
-  );
-}
+import Body from "./Body.js";
 
 const appRouter = createBrowserRouter(
   [
@@ -111,6 +91,8 @@ root.render(
     }}
   />
 );
+
+export default Body;
 
 //Basics Codes (Practice)
 

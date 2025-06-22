@@ -7,7 +7,7 @@
 const config = {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
-
+  
   // Stop running tests after `n` failures
   // bail: 0,
 
@@ -193,7 +193,6 @@ const config = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
- 
 };
 
 module.exports = config;
